@@ -17,6 +17,20 @@ After that, you need to install the packages :
      pip3 install -r requirements.txt
 ```
 
+Now change this links to your project path :
+```python
+     model = load_model('YOUR PATH /ChatBot/chatbot_model.h5')
+```
+```python
+     intents = json.loads(open('YOUR PATH /ChatBot/assets/intents.json').read())
+```
+```python
+     words = pickle.load(open('YOUR PATH /ChatBot/words.pkl','rb'))
+```
+```python
+     classes = pickle.load(open('YOUR PATH /ChatBot/classes.pkl','rb'))
+```
+
 When completing Run the project :
 ```shel
      python3 chatapp.py
